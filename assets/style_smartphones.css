@@ -1,0 +1,602 @@
+body {
+    width: 100%;
+
+
+    font-size: 20px;
+}
+
+[href*="mailto"] {
+    text-decoration: none;
+}
+
+p,
+a [class*="header"],
+[class*="button"],
+[href*="mailto"],
+.history__title,
+.main-menu-nav-title,
+.footer__working-hours_title,
+.footer__contacts_title {
+    font-family: 'Josefin Sans', 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+
+    line-height: 150%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Cormorant Infant', serif;
+    font-weight: 400;
+
+    line-height: 140%;
+}
+
+/*шапка*/
+.header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+
+    height: 160px;
+
+    font-family: 'Josefin Sans', 'Open Sans', sans-serif;
+
+    background-color: #292E36;
+}
+
+.header__button {
+    width: 80%;
+    height: 35px;
+    text-align: center;
+
+    border: 2px solid #E1B168;
+}
+
+.header__button_phone {
+    grid-area: 3/1/4/3;
+
+    background-color: #292E36;
+    color: white;
+}
+
+.header__button_reservation {
+    grid-area: 3/3/4/5;
+
+    background-color: #E1B168;
+    color: #292E36;
+}
+
+.header__logo {
+    grid-area: 1/2/3/4;
+    width: 100%;
+
+}
+
+/*меню навигации*/
+.header-menu {
+    display: none;
+    grid-template-columns: repeat(6, 10%) 1fr 4% 4% 4% 4% 4%;
+    justify-items: center;
+    align-items: center;
+
+    height: 80px;
+
+    font-family: 'Josefin Sans', 'Open Sans', sans-serif;
+
+    background-color: #292E36;
+    color: white;
+}
+
+.header-menu-about-us {
+    grid-area: 1/1/2/2;
+}
+
+.header-menu-our-menu {
+    grid-area: 1/2/2/3;
+}
+
+.header-menu-pages {
+    grid-area: 1/3/2/4;
+}
+
+.header-menu-contact {
+    grid-area: 1/4/2/5;
+}
+
+.header-menu-blog {
+    grid-area: 1/5/2/6;
+}
+
+.header-menu-instagram {
+    grid-area: 1/8/2/9;
+}
+
+.header-menu-facebook {
+    grid-area: 1/9/2/10;
+}
+
+.header-menu-twitter {
+    grid-area: 1/10/2/11;
+}
+
+.header-menu-pinterest {
+    grid-area: 1/11/2/12;
+}
+
+a[class*="header"] {
+    text-decoration: none;
+    color: white;
+}
+
+a[class*="header"]:hover {
+    color: #E1B168;
+}
+
+/*баннер*/
+.banner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr 2fr;
+    justify-items: start;
+
+    width: 100%;
+    height: 700px;
+
+    background-image: url("./images/inside_the_restaurant.png");
+    color: white;
+}
+
+.banner__title {
+    grid-area: 1/1/2/2;
+    justify-self: start;
+    align-self: end;
+
+    margin-left: 3%;
+
+    font-size: 3em;
+    font-weight: 500;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
+.banner__button_view-menu {
+    grid-area: 3/1/4/2;
+    justify-self: start;
+    align-self: start;
+
+    width: 40%;
+    margin-left: 3%;
+
+    background-color: #292E36;
+    border: 3px solid #E1B168;
+    color: #E1B168;
+}
+
+.banner__text {
+    grid-area: 2/1/3/2;
+    justify-self: start;
+    align-self: start;
+    margin-left: 3%;
+
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.banner__image {
+    display: none;
+    grid-area: 1/2/4/3;
+    justify-self: center;
+    align-self: center;
+
+    border: 3px solid #E1B168;
+    border-top-left-radius: 297px;
+    border-top-right-radius: 297px;
+}
+
+/*раздел с адресом, часами работы и резервированием*/
+.banner__menu {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 0.5fr repeat(3, 1fr);
+    justify-items: center;
+    align-items: start;
+
+    height: 240px;
+
+    background-color: #FFF8F5;
+    color: #292E36;
+}
+
+.banner__menu_location,
+.banner__menu_open-hours,
+.banner__menu_reservation {
+    align-self: start;
+    justify-self: start;
+}
+
+.banner__menu_text,
+.banner__menu_title,
+.banner__menu_mailto-link {
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.banner__menu_location-logo {
+    grid-area: 2/1/3/2;
+    width: 50%;
+}
+
+.banner__menu_location {
+    grid-area: 2/2/3/3;
+}
+
+.banner__menu_open-hours-logo {
+    grid-area: 3/1/4/2;
+    width: 50%;
+}
+
+.banner__menu_open-hours {
+    grid-area: 3/2/4/3;
+}
+
+.banner__menu_reservation-logo {
+    grid-area: 4/1/5/2;
+    width: 50%;
+}
+
+.banner__menu_reservation {
+    grid-area: 4/2/5/3;
+}
+
+[href*="restaurantate"] {
+    color: #292E36;
+}
+
+.banner__menu_title {
+    font-size: 1.2em;
+
+    color: #292E36;
+}
+
+.banner__menu_text {
+    color: #292E36;
+}
+
+/*история ресторана*/
+.history {
+    display: none;
+    grid-template-columns: 3fr 1.5fr 1.5fr;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: start;
+    align-items: center;
+
+    height: 730px;
+
+    color: #292E36;
+
+    background-color: #FFF8F5;
+}
+
+.history__title {
+    grid-area: 1/2/2/4;
+    justify-self: end;
+    align-self: start;
+    margin-right: 1em;
+
+    border-top: 3px solid #E1B168;
+    border-bottom: 3px solid #E1B168;
+}
+
+.history__image {
+    grid-column: 1/2;
+    grid-row: 1/span 3;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.history__text,
+.history__2018,
+.history__2022,
+.history-signature {
+    text-align: left;
+}
+
+.history__text_main {
+    grid-area: 1/2/2/4;
+}
+
+.history__2018 {
+    grid-area: 2/2/3/3;
+}
+
+.history__2022 {
+    grid-area: 2/3/3/4;
+}
+
+.history__signature {
+    grid-area: 3/2/4/3;
+}
+
+.history__text_title,
+.main-menu__title {
+    font-size: 2em;
+}
+
+/*меню ресторана*/
+.main-menu {
+    display: grid;
+    grid-template-columns:
+        [dishimg-start] 20% [dishimg-end dishtext-start] 50% [dishtext-end] 15% [price-start] 15% [price-end];
+    grid-template-rows: 0.5fr 1fr 1fr 0.5fr 1fr 1fr 0.5fr 1fr 0.5fr;
+    align-items: center;
+
+    height: 1000px;
+    margin: 5% 10px;
+
+    color: #292E36;
+
+    background-color: white;
+}
+
+.main-menu__nav-title {
+    grid-area: 1/1/2/2;
+    justify-self: start;
+    align-self: start;
+
+    border-top: 3px solid #E1B168;
+    border-bottom: 3px solid #E1B168;
+}
+
+.main-menu__title {
+    display: none;
+    grid-area: 1/main-menu-start/2/main-menu-end;
+    align-self: end;
+}
+
+.main-menu__text {
+    display: none;
+    grid-area: 2/main-menu-start/3/main-menu-end;
+}
+
+.main-menu__image {
+    display: none;
+    grid-area: 3/main-menu-start/9/main-menu-end;
+    align-items: center;
+}
+
+.main-menu__button {
+    grid-area: 9/dishimg-start/10/price-end;
+    justify-self: center;
+    align-self: center;
+
+    width: 70%;
+
+    height: 75px;
+    font-size: 1em;
+    background-color: white;
+    border: 3px solid #E1B168;
+    color: #E1B168;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1em;
+    color: #292E36;
+}
+
+.main-menu>img {
+    width: 80%;
+    align-self: center;
+}
+
+div.main-menu__starters_scallops_text h4,
+div.main-menu__starters_scallops_text p,
+div.main-menu__starters_roll_text h4,
+div.main-menu__starters_roll_text p,
+div.main-menu__main-dish_salmon_text h4,
+div.main-menu__main-dish_salmon_text p,
+div.main-menu__main-dish_roastbeef_text h4,
+div.main-menu__main-dish_roastbeef_text p,
+div.main-menu__dessert_pie_text h4,
+div.main-menu__dessert_pie_text p {
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+/*закуски*/
+.main-menu__starters {
+    grid-area: 1/dishimg-start/2/dishtext-end;
+}
+
+.main-menu__starters_scallops_img {
+    grid-area: 2/dishimg-start/3/dishimg-end;
+
+}
+
+.main-menu__starters_scallops_text {
+    grid-area: 2/dishtext-start/3/dishtext-end;
+}
+
+.main-menu__starters_scallops_price {
+    grid-area: 2/price-start/3/price-end;
+}
+
+.main-menu__starters_roll_img {
+    grid-area: 3/dishimg-start/4/dishimg-end;
+}
+
+.main-menu__starters_roll_text {
+    grid-area: 3/dishtext-start/4/dishtext-end;
+}
+
+.main-menu__starters_roll_price {
+    grid-area: 3/price-start/4/price-end;
+}
+
+/*главные блюда*/
+.main-menu__main-dish {
+    grid-area: 4/dishimg-start/5/dishtext-end;
+}
+
+.main-menu__main-dish_salmon_img {
+    grid-area: 5/dishimg-start/6/dishimg-end;
+}
+
+.main-menu__main-dish_salmon_text {
+    grid-area: 5/dishtext-start/6/dishtext-end;
+}
+
+.main-menu__main-dish_salmon_price {
+    grid-area: 5/price-start/6/price-end;
+}
+
+.main-menu__main-dish_roastbeef_img {
+    grid-area: 6/dishimg-start/7/dishimg-end;
+}
+
+.main-menu__main-dish_roastbeef_text {
+    grid-area: 6/dishtext-start/7/dishtext-end;
+}
+
+.main-menu__main-dish_roastbeef_price {
+    grid-area: 6/price-start/7/price-end;
+}
+
+/*десерты*/
+.main-menu__dessert {
+    grid-area: 7/dishimg-start/8/dishtext-end;
+}
+
+.main-menu__dessert_pie_img {
+    grid-area: 8/dishimg-start/9/dishimg-end;
+}
+
+.main-menu__dessert_pie_text {
+    grid-area: 8/dishtext-start/9/dishtext-end;
+}
+
+.main-menu__dessert_pie_price {
+    grid-area: 8/price-start/9/price-end;
+}
+
+/*подвал*/
+.footer {
+    display: grid;
+    grid-template-columns: 25% 30% 20% 25%;
+    grid-template-rows: 3fr 1fr 1fr 2fr;
+    justify-items: center;
+
+    height: 500px;
+
+    background-color: #292E36;
+    color: white;
+}
+
+.footer__image {
+    grid-area: 1/1/2/5;
+    height: 100%;
+}
+
+.footer__logo {
+    grid-area: 2/2/3/4;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+}
+
+.footer__contacts_title {
+    display: none;
+    grid-area: 3/1/4/2;
+    justify-self: start;
+    align-self: end;
+    margin-left: 1em;
+
+    border-top: 3px solid #E1B168;
+    border-bottom: 3px solid #E1B168;
+}
+
+.footer__contacts {
+    display: none;
+    grid-area: 4/1/5/2;
+    justify-self: left;
+    align-self: center;
+    margin-left: 1em;
+}
+
+[href*="josefin"] {
+    color: white;
+}
+
+.footer__subscribe_text {
+    grid-area: 3/1/4/5;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    line-height: 150%;
+}
+
+.footer__subscribe_form {
+    grid-area: 4/1/5/3;
+    justify-self: end;
+
+    width: 80%;
+
+    border: 3px solid #E1B168;
+    background-color: #292E36;
+    color: white;
+}
+
+[placeholder] {
+    width: 90%;
+
+    font-family: 'Josefin Sans', 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+
+    border: 0em;
+    background-color: #292E36;
+    color: white;
+}
+
+.footer__subscribe_button {
+    grid-area: 4/3/5/5;
+    justify-self: start;
+    width: 80%;
+    /*  height: 80%; */
+
+    /*  width: 220px;
+    height: 76px; */
+
+    background-color: #E1B168;
+    border: 2px solid #E1B168;
+
+    color: #292E36;
+}
+
+.footer__working-hours_title {
+    display: none;
+    grid-area: 3/4/4/5;
+    justify-self: end;
+    align-self: end;
+    margin-right: 1em;
+
+    border-top: 3px solid #E1B168;
+    border-bottom: 3px solid #E1B168;
+}
+
+.footer__working-hours {
+    display: none;
+    grid-area: 4/4/5/5;
+    justify-self: right;
+    align-self: center;
+    margin-right: 1em;
+    text-align: end;
+}
