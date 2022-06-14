@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 500px)" href="./assets/style_smartphones.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -69,18 +70,19 @@
         <section class="history">
             <a id="about_us" class="history__title">ABOUT US</a>
             <img src="./assets/images/table_for_four.png" alt="table for four" class="history__image">
-            <div class="history__text">
+            <div class="history__text_main">
                 <h2 class="history__text_title">The Delicious Story</h2>
-                <p>The people, food and the prime locations make the perfect place for the friends & family to come
+                <p class="history__text_text">The people, food and the prime locations make the perfect place for the
+                    friends & family to come
                     together and have great time.</p>
             </div>
             <div class="history__2018">
                 <h2 class="history__text_title">2018</h2>
-                <p>Plan for this restaurant to deliver healthy food.</p>
+                <p class="history__text_text">Plan for this restaurant to deliver healthy food.</p>
             </div>
             <div class="history__2022">
                 <h2 class="history__text_title">2022</h2>
-                <p>Happily in the fourth year by fulfill the motto.</p>
+                <p class="history__text_text">Happily in the fourth year by fulfill the motto.</p>
             </div>
             <div class="history__signature">
                 <img src="./assets/images/signature.png" alt="signature">
@@ -88,78 +90,75 @@
         </section>
         <!--меню ресторана-->
         <section class="main-menu">
-            <a id="menu" class="main-menu-nav-title">MENU</a>
-            <h2 class="main-menu-title">Try Our Special Dishes</h2>
-            <p class="main-menu-text">Every time you perfectly dine with us, it should happy for great inspired food in
+            <a id="menu" class="main-menu__nav-title">MENU</a>
+            <h2 class="main-menu__title">Try Our Special Dishes</h2>
+            <p class="main-menu__text">Every time you perfectly dine with us, it should happy for great inspired food in
                 an environment designed with individual touches unique to the local area.</p>
-
-            <img src="./assets/images/Menu/peach_pie.png" alt="peach pie" class="main-menu-image">
-            <button class="main-menu-button">See all dishes</button>
+            <img src="./assets/images/Menu/peach_pie.png" alt="peach pie" class="main-menu__image">
+            <button class="main-menu__button">See all dishes</button>
             <!--закуски-->
-            <h3 class="main-menu-starters">Starters</h3>
+            <h3 class="main-menu__starters">Starters</h3>
             <img src="./assets/images/Menu/1raw_scallops.png" alt="Raw Scallops from Erquy"
-                class="main-menu-starters-scallops-img">
-            <div class="main-menu-starters-scallops-text">
+                class="main-menu__starters_scallops_img">
+            <div class="main-menu__starters_scallops_text">
                 <h4>Raw Scallops from Erquy</h4>
                 <p>Shuck the scallop to that used for oysters</p>
             </div>
-            <p class="main-menu-starters-scallops-price">&#x24; 40</p>
-
-            <img src="./assets/images/Menu/2spring_rolls.png" alt="Spring Roll" class="main-menu-starters-roll-img">
-            <div class="main-menu-starters-roll-text">
+            <p class="main-menu__starters_scallops_price">&#x24; 40</p>
+            <img src="./assets/images/Menu/2spring_rolls.png" alt="Spring Roll" class="main-menu__starters_roll_img">
+            <div class="main-menu__starters_roll_text">
                 <h4>Spring Roll</h4>
                 <p>Add oil to a hot pan spring onion whites</p>
-
             </div>
-            <p class="main-menu-starters-roll-price">&#x24; 20</p>
+            <p class="main-menu__starters_roll_price">&#x24; 20</p>
             <!--главные блюда-->
-            <h3 class="main-menu-main-dish">Main Dish</h3>
+            <h3 class="main-menu__main-dish">Main Dish</h3>
             <img src="./assets/images/Menu/5grilled_salmon.png" alt="Grilled Salmon with Dill Sauce"
-                class="main-menu-main-dish-salmon-img">
-            <div class="main-menu-main-dish-salmon-text">
+                class="main-menu__main-dish_salmon_img">
+            <div class="main-menu__main-dish_salmon_text">
                 <h4>Grilled Salmon with Dill Sauce</h4>
                 <p>Brown sugar, salmon fillet, Dijon mustard</p>
             </div>
-            <p class="main-menu-main-dish-salmon-price">&#x24; 40</p>
+            <p class="main-menu__main-dish_salmon_price">&#x24; 40</p>
             <img src="./assets/images/Menu/6roast_beef.png" alt="Roast Beef with Vegetable"
-                class="main-menu-main-dish-roastbeef-img">
-            <div class="main-menu-main-dish-roastbeef-text">
+                class="main-menu__main-dish_roastbeef_img">
+            <div class="main-menu__main-dish_roastbeef_text">
                 <h4>Roast Beef with Vegetable</h4>
                 <p>Green beans, rib eye, olive oil, beef</p>
             </div>
-            <p class="main-menu-main-dish-roastbeef-price">&#x24; 20</p>
+            <p class="main-menu__main-dish_roastbeef_price">&#x24; 20</p>
             <!--десерты-->
-            <h3 class="main-menu-dessert">Dessert</h3>
-            <img src="./assets/images/Menu/9apple_pie.png" alt="Apple Pie with Cream" class="main-menu-dessert-pie-img">
-            <div class="main-menu-dessert-pie-text">
+            <h3 class="main-menu__dessert">Dessert</h3>
+            <img src="./assets/images/Menu/9apple_pie.png" alt="Apple Pie with Cream"
+                class="main-menu__dessert_pie_img">
+            <div class="main-menu__dessert_pie_text">
                 <h4>Apple Pie with Cream</h4>
                 <p>Whipping cream, egg white, cinnamon</p>
             </div>
-            <p class="main-menu-dessert-pie-price">&#x24; 15</p>
+            <p class="main-menu__dessert_pie_price">&#x24; 15</p>
         </section>
-
     </main>
     <!--подвал-->
     <footer class="footer">
-        <img src="./assets/images/lights.png" alt="bulbs" class="footer-image">
-        <img src="./assets/images/tasteat_logo.png" alt="logo" class="footer-logo">
+        <img src="./assets/images/lights.png" alt="bulbs" class="footer__image">
+        <img src="./assets/images/tasteat_logo.png" alt="logo" class="footer__logo">
         <!--контактное лицо-->
-        <a id="contacts" class="footer-contacts-title">CONTACTS</a>
-        <div class="footer-contacts">
+        <a id="contacts" class="footer__contacts_title">CONTACTS</a>
+        <div class="footer__contacts">
             <p>5 Rue Dalou, 75015 Paris</p>
             <p>+123 456 789</p>
             <!--телефон-->
             <a href="mailto:josefin@mail.com">josefin@mail.com</a>
         </div>
         <!--подписка на рассылку-->
-        <p class="footer-subscribe-text">Join our mailing list for updates,<br>Get news & offers events.</p>
-        <form action="example" class="footer-subscribe-form">
+        <p class="footer__subscribe_text">Join our mailing list for updates,<br>Get news & offers events.</p>
+        <form action="example" class="footer__subscribe_form">
             <input type="email" name="mail" id="contact_mail" placeholder="E-mail">
         </form>
-        <button class="footer-subscribe-button">Subscribe</button>
+        <button class="footer__subscribe_button">Subscribe</button>
         <!--часы работы-->
-        <div class="footer-working-hours-title">WORKING HOURS</div>
-        <div class="footer-working-hours">
+        <div class="footer__working-hours_title">WORKING HOURS</div>
+        <div class="footer__working-hours">
             <p>Mon – Fri: 7.00am – 6.00pm</p>
             <p>Sat: 7.00am – 6.00pm</p>
             <p>Sun: 8.00am – 6.00pm</p>
