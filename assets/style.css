@@ -286,7 +286,9 @@ a[class*="header"]:hover {
     border-top: 3px solid #E1B168;
     border-bottom: 3px solid #E1B168;
 }
-
+.history__text_main{
+    grid-area: 1/2/2/4;
+}
 .history__image {
     grid-column: 1/2;
     grid-row: 1/span 3;
@@ -336,7 +338,7 @@ a[class*="header"]:hover {
     background-color: white;
 }
 
-.main-menu-nav-title {
+.main-menu__nav-title {
     grid-area: 1/1/2/2;
     justify-self: start;
     align-self: start;
@@ -345,21 +347,21 @@ a[class*="header"]:hover {
     border-bottom: 3px solid #E1B168;
 }
 
-.main-menu-title {
+.main-menu__title {
     grid-area: 1/main-menu-start/2/main-menu-end;
     align-self: end;
 }
 
-.main-menu-text {
+.main-menu__text {
     grid-area: 2/main-menu-start/3/main-menu-end;
 }
 
-.main-menu-image {
+.main-menu__image {
     grid-area: 3/main-menu-start/9/main-menu-end;
     align-items: center;
 }
 
-.main-menu-button {
+.main-menu__button {
     grid-area: 6/main-menu-start/7/main-menu-end;
     justify-items: start;
     align-items: center;
@@ -378,92 +380,92 @@ h4 {
     color: #292E36;
 }
 
-div.main-menu-starters-scallops-text h4,
-div.main-menu-starters-scallops-text p,
-div.main-menu-starters-roll-text h4,
-div.main-menu-starters-roll-text p,
-div.main-menu-main-dish-salmon-text h4,
-div.main-menu-main-dish-salmon-text p,
-div.main-menu-main-dish-roastbeef-text h4,
-div.main-menu-main-dish-roastbeef-text p,
-div.main-menu-dessert-pie-text h4,
-div.main-menu-dessert-pie-text p {
+div.main-menu__starters__scallops_text p,
+div.main-menu__starters__scallops_text h4,
+div.main-menu__starters__roll_text h4,
+div.main-menu__starters-roll_text p,
+div.main-menu__main-dish__salmon_text h4,
+div.main-menu__main-dish__salmon_text p,
+div.main-menu__main-dish__roastbeef_text h4,
+div.main-menu__main-dish__roastbeef_text p,
+div.main-menu__dessert__pie_text h4,
+div.main-menu__dessert__pie_text p {
     margin-top: 0%;
     margin-bottom: 0%;
 }
 
 /*закуски*/
-.main-menu-starters {
+.main-menu__starters {
     grid-area: 1/dishimg-start/2/dishtext-end;
 }
 
-.main-menu-starters-scallops-img {
+.main-menu__starters_scallops_img {
     grid-area: 2/dishimg-start/3/dishtext-end;
 }
 
-.main-menu-starters-scallops-text {
+.main-menu__starters_scallops_text {
     grid-area: 2/dishtext-start/3/dishtext-end;
 }
 
-.main-menu-starters-scallops-price {
+.main-menu__starters_scallops_price {
     grid-area: 2/price-start/3/price-end;
 }
 
-.main-menu-starters-roll-img {
+.main-menu__starters_roll_img {
     grid-area: 3/dishimg-start/4/dishtext-end;
 }
 
-.main-menu-starters-roll-text {
+.main-menu__starters_roll_text {
     grid-area: 3/dishtext-start/4/dishtext-end;
 }
 
-.main-menu-starters-roll-price {
+.main-menu__starters_roll_price {
     grid-area: 3/price-start/4/price-end;
 }
 
 /*главные блюда*/
-.main-menu-main-dish {
+.main-menu__main-dish {
     grid-area: 4/dishimg-start/5/dishtext-end;
 }
 
-.main-menu-main-dish-salmon-img {
+.main-menu__main-dish_salmon_img {
     grid-area: 5/dishimg-start/6/dishtext-end;
 }
 
-.main-menu-main-dish-salmon-text {
+.main-menu__main-dish_salmon_text {
     grid-area: 5/dishtext-start/6/dishtext-end;
 }
 
-.main-menu-main-dish-salmon-price {
+.main-menu__main-dish_salmon_price {
     grid-area: 5/price-start/6/price-end;
 }
 
-.main-menu-main-dish-roastbeef-img {
+.main-menu__main-dish_roastbeef_img {
     grid-area: 6/dishimg-start/7/dishtext-end;
 }
 
-.main-menu-main-dish-roastbeef-text {
+.main-menu__main-dish_roastbeef_text {
     grid-area: 6/dishtext-start/7/dishtext-end;
 }
 
-.main-menu-main-dish-roastbeef-price {
+.main-menu__main-dish_roastbeef_price {
     grid-area: 6/price-start/7/price-end;
 }
 
 /*десерты*/
-.main-menu-dessert {
+.main-menu__dessert {
     grid-area: 7/dishimg-start/8/dishtext-end;
 }
 
-.main-menu-dessert-pie-img {
+.main-menu__dessert_pie_img {
     grid-area: 8/dishimg-start/9/dishtext-end;
 }
 
-.main-menu-dessert-pie-text {
+.main-menu__dessert_pie_text {
     grid-area: 8/dishtext-start/9/dishtext-end;
 }
 
-.main-menu-dessert-pie-price {
+.main-menu__dessert_pie_price {
     grid-area: 8/price-start/9/price-end;
 }
 
