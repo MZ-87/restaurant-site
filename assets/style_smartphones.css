@@ -1,7 +1,6 @@
 body {
     width: 100%;
 
-
     font-size: 20px;
 }
 
@@ -570,7 +569,11 @@ div.main-menu__dessert_pie_text p {
     grid-area: 4/3/5/5;
     justify-self: start;
     width: 80%;
-    
+    /*  height: 80%; */
+
+    /*  width: 220px;
+    height: 76px; */
+
     background-color: #E1B168;
     border: 2px solid #E1B168;
 
@@ -595,4 +598,4 @@ div.main-menu__dessert_pie_text p {
     align-self: center;
     margin-right: 1em;
     text-align: end;
-} 
+}
