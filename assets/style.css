@@ -18,10 +18,10 @@ p,
 a [class*="header"],
 [class*="button"],
 [href*="mailto"],
-.history-title,
+.history__title,
 .main-menu-nav-title,
-.footer-working-hours-title,
-.footer-contacts-title {
+.footer__working-hours_title,
+.footer__contacts_title {
     font-family: 'Josefin Sans', 'Open Sans', sans-serif;
     font-size: 1.1em;
     font-weight: 400;
@@ -29,7 +29,7 @@ a [class*="header"],
     line-height: 150%;
 }
 
-.banner__title,
+h1,
 h2,
 h3,
 h4 {
@@ -286,9 +286,7 @@ a[class*="header"]:hover {
     border-top: 3px solid #E1B168;
     border-bottom: 3px solid #E1B168;
 }
-.history__text_main{
-    grid-area: 1/2/2/4;
-}
+
 .history__image {
     grid-column: 1/2;
     grid-row: 1/span 3;
@@ -303,7 +301,7 @@ a[class*="header"]:hover {
     text-align: left;
 }
 
-.history__text {
+.history__text_main {
     grid-area: 1/2/2/4;
 }
 
@@ -319,7 +317,8 @@ a[class*="header"]:hover {
     grid-area: 3/2/4/3;
 }
 
-.history__text_title {
+.history__text_title,
+.main-menu__title {
     font-size: 2em;
 }
 
@@ -374,22 +373,25 @@ a[class*="header"]:hover {
     color: #E1B168;
 }
 
-h4 {
+h3 {
     font-size: 1.5em;
+}
 
+h4 {
+    font-size: 1.2em;
     color: #292E36;
 }
 
-div.main-menu__starters__scallops_text p,
-div.main-menu__starters__scallops_text h4,
-div.main-menu__starters__roll_text h4,
-div.main-menu__starters-roll_text p,
-div.main-menu__main-dish__salmon_text h4,
-div.main-menu__main-dish__salmon_text p,
-div.main-menu__main-dish__roastbeef_text h4,
-div.main-menu__main-dish__roastbeef_text p,
-div.main-menu__dessert__pie_text h4,
-div.main-menu__dessert__pie_text p {
+div.main-menu__starters_scallops_text h4,
+div.main-menu__starters_scallops_text p,
+div.main-menu__starters_roll_text h4,
+div.main-menu__starters_roll_text p,
+div.main-menu__main-dish_salmon_text h4,
+div.main-menu__main-dish_salmon_text p,
+div.main-menu__main-dish_roastbeef_text h4,
+div.main-menu__main-dish_roastbeef_text p,
+div.main-menu__dessert_pie_text h4,
+div.main-menu__dessert_pie_text p {
     margin-top: 0%;
     margin-bottom: 0%;
 }
@@ -481,21 +483,21 @@ div.main-menu__dessert__pie_text p {
     color: white;
 }
 
-.footer-image {
+.footer__image {
     grid-area: 1/1/2/5;
     justify-self: stretch;
 
     height: 600px;
 }
 
-.footer-logo {
+.footer__logo {
     grid-area: 2/2/3/4;
     justify-self: center;
     align-self: center;
     margin-top: 1em;
 }
 
-.footer-contacts-title {
+.footer__contacts_title {
     grid-area: 3/1/4/2;
     justify-self: start;
     align-self: end;
@@ -505,7 +507,7 @@ div.main-menu__dessert__pie_text p {
     border-bottom: 3px solid #E1B168;
 }
 
-.footer-contacts {
+.footer__contacts {
     grid-area: 4/1/5/2;
     justify-self: left;
     align-self: center;
@@ -516,7 +518,7 @@ div.main-menu__dessert__pie_text p {
     color: white;
 }
 
-.footer-subscribe-text {
+.footer__subscribe_text {
     grid-area: 3/2/4/4;
     justify-self: center;
     align-self: center;
@@ -524,25 +526,7 @@ div.main-menu__dessert__pie_text p {
     line-height: 150%;
 }
 
-.footer-working-hours-title {
-    grid-area: 3/4/4/5;
-    justify-self: end;
-    align-self: end;
-    margin-right: 1em;
-
-    border-top: 3px solid #E1B168;
-    border-bottom: 3px solid #E1B168;
-}
-
-.footer-working-hours {
-    grid-area: 4/4/5/5;
-    justify-self: right;
-    align-self: center;
-    margin-right: 1em;
-    text-align: end;
-}
-
-.footer-subscribe-form {
+.footer__subscribe_form {
     grid-area: 4/2/5/3;
     justify-self: end;
 
@@ -567,7 +551,7 @@ div.main-menu__dessert__pie_text p {
     color: white;
 }
 
-.footer-subscribe-button {
+.footer__subscribe_button {
     grid-area: 4/3/5/4;
     justify-self: start;
 
@@ -578,4 +562,22 @@ div.main-menu__dessert__pie_text p {
     border: 3px solid #E1B168;
 
     color: #292E36;
+}
+
+.footer__working-hours_title {
+    grid-area: 3/4/4/5;
+    justify-self: end;
+    align-self: end;
+    margin-right: 1em;
+
+    border-top: 3px solid #E1B168;
+    border-bottom: 3px solid #E1B168;
+}
+
+.footer__working-hours {
+    grid-area: 4/4/5/5;
+    justify-self: right;
+    align-self: center;
+    margin-right: 1em;
+    text-align: end;
 }
